@@ -24,11 +24,13 @@ const Menu = (props) => {
                             <li className="nav-item active">
                                 <Link style={isActive(props.history, '/')} className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                             </li>
+                        </ul>
+                        <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <Link style={isActive(props.history, '/signin')} className="nav-link" to="/signin">SignIn</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link style={isActive(props.history, '/signup')} className="nav-link disabled" to="/signup">SignUp</Link>
+                                    <Link style={isActive(props.history, '/signin')} className="nav-link" to="/signin">Connexion</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link style={isActive(props.history, '/signup')} className="nav-link disabled" to="/signup">Register</Link>
                             </li>
                         </ul>
                     </div>
